@@ -1,0 +1,92 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 18px;
+}
+
+body {
+  padding: 15px;
+  margin: 0;
+}
+
+/* form */
+
+.form {
+  margin-bottom: 25px;
+  padding: 15px;
+  border: 1px solid #000;
+}
+
+.form__title {
+  margin: 0 0 20px;
+}
+
+.form__field {
+  display: block;
+  width: 100%;
+  max-width: 400px;
+  padding: 6px 8px;
+  margin-bottom: 14px;
+  font-size: inherit;
+  border: 1px solid #000;
+  border-radius: 0;
+}
+
+.form__button {
+  padding: 8px 15px;
+  font-size: inherit;
+  border: 1px solid #000;
+  background-color: #161616;
+  color: #fff;
+  cursor: pointer;
+}
+
+/* projects */
+
+.projects {
+  margin-bottom: 25px;
+  padding: 15px;
+  border: 1px solid #000;
+}
+
+.projects_before-drop {
+  background-color: #000;
+  color: #fff;
+}
+
+.projects__title {
+  margin: 0 0 15px;
+}
+
+.projects__list {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.projects__item {
+  padding: 10px;
+  background-color: #e6e6e6;
+  color: #000;
+  cursor: move;
+}
+
+.projects__item + .projects__item {
+  margin-top: 15px;
+}
+
+.projects__item-title {
+  margin: 0 0 10px;
+}
+
+.projects__item-subtitle {
+  margin: 0 0 10px;
+  font-size: 14px;
+}
+
+.projects__item-description {
+  margin: 0;
+}

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TS Drag & Drop</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="dist/app.js" defer></script>
+</head>
+<body>
+  <template id="form-template">
+    <form class="form">
+      <h1 class="form__title">Add project</h1>
+      <input class="form__field" id="title-field" type="text" placeholder="Title">
+      <input class="form__field" id="people-field" type="number" placeholder="People">
+      <input class="form__field" id="description-field" type="text" placeholder="Description">
+      <button class="form__button" type="submit">Submit</button>
+    </form>
+  </template>
+
+  <template id="projects-template">
+    <section class="projects">
+      <h2 class="projects__title" id="projects-title"></h2>
+      <ul class="projects__list" id="projects-list"></ul>
+    </section>
+  </template>
+
+  <template id="project-item">
+    <li class="projects__item" draggable="true">
+      <h3 class="projects__item-title" id="project-title"></h3>
+      <div class="projects__item-subtitle" id="project-subtitle"></div>
+      <p class="projects__item-description" id="project-description"></p>
+    </li>
+  </template>
+
+  <div id="app"></div>
+</body>
+</html>
